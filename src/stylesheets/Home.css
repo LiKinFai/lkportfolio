@@ -1,0 +1,140 @@
+.home{
+    width: 100%;
+}
+
+.intro, .contact-body, .detail-body {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+    box-shadow: 5px 5px 10px grey;
+    padding: 35px;
+}
+
+.intro article {
+    text-indent: 70px;
+}
+
+.intro article span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.learnt {
+    font-weight: bold;
+}
+
+.myprojects{
+    padding: 80px;
+    text-align: center;
+    font-family: "KdamThmorPro-Regular";
+    font-size: 40px;
+}
+
+.projects-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.project{
+    margin: 50px;
+    box-shadow: 3px 3px 10px grey;
+    width: 500px;
+    min-height: 700px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 55px 15px 55px;
+}
+
+.project-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.project-photo{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+    background-color: rgba(128, 128, 128, 0);
+}
+
+.techs{
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-description {
+    padding: 15px;
+}
+
+.photo-container{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.overlay {
+    background-color: rgba(128, 128, 128, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    transition: .75s ease;
+}
+
+.project-detail {
+    line-height: 400px;
+    text-align: center;
+    list-style-type: none;
+}
+
+.project-detail a{
+    opacity: 0;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    transition: .75s ease;
+}
+
+.photo-container:hover .overlay{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.photo-container:hover .project-detail a{
+    opacity: 1;
+}
+
+.techs {
+    color: orange;
+}
+
+.learnt {
+    color: orange;
+}
+
+.contact-header {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contact-images {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: space-around;
+}
