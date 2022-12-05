@@ -62,7 +62,7 @@
     height: 400px;
     object-fit: contain;
     display: block;
-    background-color: rgba(128, 128, 128, 0);
+    background-color: rgba(128, 128, 128, 0.1);
 }
 
 .techs{
@@ -78,6 +78,7 @@
     position: relative;
     display: block;
     overflow: hidden;
+    border: 1px solid grey;
 }
 
 .overlay {
