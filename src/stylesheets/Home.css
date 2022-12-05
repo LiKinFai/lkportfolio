@@ -2,12 +2,19 @@
     width: 100%;
 }
 
-.intro, .contact-body, .detail-body {
+.intro, .detail-body {
     margin-top: 80px;
     margin-bottom: 80px;
     width: 100%;
     box-shadow: 5px 5px 10px grey;
-    padding: 35px;
+    padding: 50px;
+}
+
+.contact-body{
+    margin-top: 100px;
+    width: 100%;
+    box-shadow: 5px 5px 10px grey;
+    padding: 30px;
 }
 
 .intro article {
@@ -104,6 +111,7 @@
     border-radius: 20px;
     padding: 10px;
     transition: .75s ease;
+    display: none;
 }
 
 .photo-container:hover .overlay{
@@ -112,6 +120,7 @@
 
 .photo-container:hover .project-detail a{
     opacity: 1;
+    display: inline-block;
 }
 
 .techs {
@@ -125,7 +134,7 @@
 .contact-header {
     font-size: 30px;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .contact-images {
@@ -137,4 +146,82 @@
 .contact-buttons {
     display: flex;
     justify-content: space-around;
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    .intro, .detail-body {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        box-shadow: 5px 5px 10px grey;
+        padding: 10px;
+    }
+
+    .contact-body{
+        margin-top: 40px;
+        width: 100%;
+        box-shadow: 5px 5px 10px grey;
+        padding: 10px;
+    }
+
+    .intro article {
+        text-indent: 40px;
+    }
+
+    .intro article span {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .myprojects{
+        padding: 30px;
+        text-align: center;
+        font-family: "KdamThmorPro-Regular";
+        font-size: 35px;
+    }
+    
+    .project{
+        margin: 20px;
+        box-shadow: 3px 3px 10px grey;
+        width: 350px;
+        min-height: 550px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 15px 55px 15px 55px;
+    }
+
+    .project-photo{
+        width: 300px;
+        height: 300px;
+    }
+
+    .project-description {
+        padding: 10px;
+    }
+
+    .project-detail {
+        line-height: 300px;
+        text-align: center;
+        list-style-type: none;
+    }
+
+    .project-title {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .contact-header {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    .contact-images {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
 }

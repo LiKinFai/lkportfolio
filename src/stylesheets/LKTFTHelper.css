@@ -33,3 +33,37 @@
     height: 100px;
     border-radius: 50%;
 }
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    .detail-description {
+        min-height: 0;
+    }
+    
+    .detail-title {
+        font-size: 25px;
+        font-weight: bold;
+        white-space: nowrap;
+        margin-left: auto;
+    }
+    
+    .detail-photo{
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        background-color: rgba(128, 128, 128, 0.1);
+        float: left;
+        margin: 0 20px 20px 0;
+    }
+    
+    .detail-info {
+        margin-top: 30px;
+    }
+    
+    .source-images {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+}

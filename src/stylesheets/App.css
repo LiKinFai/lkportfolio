@@ -67,3 +67,23 @@
 .link2 a{
     font-size: 20px;
 }
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    .Navbar {
+        padding: 20px;
+    }
+    .link1 a {
+        font-size: 20px;
+    }
+
+    .App{
+        padding-left: 5vw;
+        padding-right: 5vw;
+        font-family: 'Montserrat-VariableFont_wght';
+    }
+
+    *{
+        font-size: 18px;
+    }
+}
